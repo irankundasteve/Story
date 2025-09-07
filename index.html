@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fog That Forgot Time</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 2em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #34495e;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        p.fade-in {
+            opacity: 1;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .navigation button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            transition: background 0.3s;
+        }
+
+        .navigation button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>The Fog That Forgot Time</header>
+
+    <main>
+        <h2 id="page-title"></h2>
+        <p id="page-content"></p>
+
+        <div class="navigation">
+            <button id="prev-btn">Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
+    </main>
+
+    <script>
+        const storyPages = [
+            {
+                title: "Page 1 – The Fog That Forgot Time",
+                content: `The village clock had stopped ticking the night the fog refused to leave. Children counted the hours by how many times the rooster tried and failed to crow, while elders whispered that the mist was not weather at all, but a memory that had lost its way. In the silence, even the river seemed to hesitate, carrying secrets slower than usual, as though listening for someone brave enough to ask what time truly meant.
+
+Mara, a girl with a curiosity sharper than the village knife maker’s steel, decided she would find the heart of the fog. She wrapped herself in her father’s old coat, stuffed her pockets with bread and a jar of honey, and stepped into the gray swirl. Every familiar landmark was warped; the bakery smelled of cold ash, the well hummed like it had forgotten its own depth.
+
+Hours—or maybe minutes, she couldn’t tell—later, she stumbled upon a clearing where the fog coiled like smoke from a fire that had never died. In its center stood an old man, or what might have been one. His eyes reflected stars that weren’t in the sky, and his voice came without moving lips.
+
+“Why do you come, child?” he asked.
+
+“I want to know why the fog won’t leave,” Mara said, trying to sound braver than she felt.
+
+The figure nodded slowly. “Because it is holding onto the stories no one tells anymore. Every forgotten dream, every unsaid word, every secret kindness—they gather here. They are not lost, only waiting for someone to remember them.”
+
+Mara thought of her grandmother, who had told stories only when the wind leaned in just right, of her brother, who had promised to write a letter he never did, and of the little village cat who had disappeared last winter. She realized the fog was made of all the things people had let slip through their fingers.
+
+“I can help it move on,” she whispered.
+
+The figure smiled. “Then speak them, write them, sing them. Remember.”
+
+Mara spent the night telling stories to the fog. By dawn, it thinned like morning mist over the river. She returned to the village, carrying not bread or honey, but a small handful of glowing whispers that would remind everyone that time isn’t only measured by clocks.
+
+And from that day, the clock in the village ticked again, though sometimes, when the fog returns, it ticks in stories instead of seconds.`
+            },
+            {
+                title: "Page 2 – The Fog That Remembered",
+                content: `When Mara returned to her house, the village seemed unchanged at first glance. The bakery’s chimney still sent lazy smoke into the sky, the river still curved lazily through the fields, and the villagers moved as if the fog had never been there. Yet something felt different. The air hummed faintly, carrying echoes of stories that no one had remembered in years.
+
+At breakfast, her mother asked why her coat smelled faintly of smoke and stars. Mara shrugged, unsure how to explain. She decided to visit the well, the place that had seemed to hum that first night. As she approached, she noticed tiny shapes wriggling along the surface of the water—images of moments lost to time: a kite flown once and forgotten, a handshake that had never been returned, a lullaby sung to an empty cradle.
+
+She reached out and touched the water. The images rippled, and a voice whispered, “Remember.” It was soft, yet it filled her ears with all the forgotten things at once. For a moment, Mara felt dizzy, as if she were both young and old, both a girl and the entire village combined. She stumbled back, clutching the edge of the well.
+
+From that day, Mara became the Keeper of Small Things. Villagers began to notice that moments they thought forgotten—lost laughter, promises, hidden hopes—sometimes returned to them. An old man found the letter he thought he had lost. A child discovered a song they had sung once in secret. Even the village cat returned, curling on Mara’s windowsill as if nothing had ever happened.
+
+Yet the fog still lingered at the edges of the forest, patient and quiet. Mara knew it had not gone forever—it was waiting for someone else to forget, for another story to slip through the cracks. And she understood that the work of remembering was endless, like the slow ticking of the village clock.`
+            },
+            {
+                title: "Page 3 – The Whispering Grove",
+                content: `By the third morning, Mara felt the pull of the forest stronger than ever. The fog had begun drifting closer to the village, not to smother it, but as if calling her back. She followed the winding path that led past the well and into the oldest part of the woods—a place the elders called the Whispering Grove, though no one had dared enter in decades.
+
+The trees there leaned unnaturally, their trunks twisted like ancient hands. The air smelled faintly of honey and ash, and tiny motes of light floated between the branches, moving as if alive. Mara felt the fog brush against her cheeks, carrying faint snippets of conversations, laughter, and cries she didn’t recognize, yet somehow knew.
+
+Then she saw it: a hollow tree, wider than any house in the village, with a doorway shaped like a crescent moon. Inside, shadows flickered and shifted. The old figure she had met before appeared again, though this time its eyes were pools of soft silver, reflecting Mara’s own face.
+
+“You’ve remembered well,” it said, voice like wind through dry leaves. “But the fog has grown restless. Forgotten stories are stronger than you think. If they escape, they can change the world outside your village.”
+
+Mara swallowed hard. “What must I do?”
+
+The figure stretched a hand, revealing a small, glowing book. “Write them. Every forgotten word, every secret kindness, every dream left unsaid. Only when the stories are written down and shared can the fog rest.”
+
+Mara stepped forward, heart pounding. She felt the weight of countless untold stories pressing on her shoulders. The Whispering Grove seemed to lean in, listening, waiting. For the first time, she understood that remembering wasn’t just magic—it was responsibility.
+
+And somewhere deep in the fog, a voice whispered, “Hurry… before the forgotten spreads too far.”`
+            }
+        ];
+
+        let currentPage = 0;
+
+        const titleElement = document.getElementById('page-title');
+        const contentElement = document.getElementById('page-content');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        function showPage(index) {
+            const page = storyPages[index];
+            titleElement.textContent = page.title;
+            
+            // Fade-out current content
+            contentElement.classList.remove('fade-in');
+            setTimeout(() => {
+                contentElement.textContent = page.content;
+                contentElement.classList.add('fade-in');
+            }, 200);
+
+            prevBtn.disabled = index === 0;
+            nextBtn.disabled = index === storyPages.length - 1;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 0) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < storyPages.length - 1) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        });
+
+        // Initialize first page
+        showPage(currentPage);
+    </script>
+
+</body>
+</html>
